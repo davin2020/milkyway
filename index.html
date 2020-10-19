@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Solar System</title>
+  <link href="normalize.css" type="text/css" rel="stylesheet">
+  <link href="solar_style.css" type="text/css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<header>
+	</header>
+
+	<main>
+	<div class="planet-container">
+		<svg height="800" width="800">
+			<!--	Draw the Sun 			-->
+			<circle cx="400" cy="400" r="50" stroke="black" stroke-width="2" fill="yellow" id="sun" />
+
+			<!--	Draw the planets orbits			-->
+			<circle cx="400" cy="400" r="80" class="orbit-lines" />
+			<circle cx="400" cy="400" r="100" class="orbit-lines" />
+			<circle cx="400" cy="400" r="120" class="orbit-lines" />
+			<circle cx="400" cy="400" r="140" class="orbit-lines" />
+			<circle cx="400" cy="400" r="160" class="orbit-lines" />
+			<circle cx="400" cy="400" r="180" class="orbit-lines" />
+			<circle cx="400" cy="400" r="200" class="orbit-lines" />
+			<circle cx="400" cy="400" r="220" class="orbit-lines" />
+
+			<!--	Draw the planets			-->
+			<circle cx="475" cy="430" r="5" class="planet" id="mercury" />
+			<circle cx="500" cy="400" r="5" class="planet" id="venus" />
+			<circle cx="505" cy="340" r="15" class="planet" id="earth"/>
+			<circle cx="450" cy="270" r="10" class="planet" id="mars" />
+			<circle cx="280" cy="300" r="18" class="planet" id="jupiter" />
+			<circle cx="460" cy="570" r="10" class="planet" id="saturn" />
+			<circle cx="320" cy="580" r="15" class="planet" id="uranus" />
+			<circle cx="220" cy="530" r="15" class="planet" id="neptune" />
+		</svg>
+	</div>
+	</main>
+
+	<footer>
+	</footer>
+
+</body>
+</html>

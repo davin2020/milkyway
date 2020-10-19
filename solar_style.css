@@ -1,0 +1,98 @@
+/* CSS Template for Solar Systems Animation */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: black;
+	font-size: 62.5%;
+}
+
+.planet-container {
+	background-color: black;
+	width: 800px;
+}
+/*  animate the suns color */
+@keyframes sun-color {
+	from { fill: yellow; }
+	to	 { fill: #FFD700; }
+}
+
+/* The element to apply the animation to */
+#sun {
+	animation-name: sun-color;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+/* Planet Colors -
+ mercury browny, venus white, earth teal, mars red, jupiter sandy, saturn salmon, uranus skyblue, neptune cornflowerblue */
+
+/* animate the planets orbit */
+@keyframes planet-orbit {
+	from { transform: rotate(0deg); }
+	to   { transform: rotate(360deg); }
+}
+
+.planet {
+	animation-name: planet-orbit;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	transform-origin: 50%;
+	animation-iteration-count: 5;
+	stroke: black;
+	stroke-width: 2;
+}
+
+#mercury {
+	animation-duration: 6s;
+	fill: rosybrown;
+}
+
+#venus {
+	animation-duration: 7s;
+	fill: white;
+}
+
+#earth{
+	animation-duration: 8s;
+	fill: #20B2AA;
+}
+
+#mars{
+	animation-duration: 10s;
+	fill: darkred;
+}
+
+#jupiter {
+	animation-duration: 10s;
+	fill: sandybrown;
+}
+
+#saturn {
+	animation-duration: 12s;
+	fill: darksalmon;
+}
+
+#uranus {
+	animation-duration: 13s;
+	fill: skyblue;
+}
+
+#neptune {
+	animation-duration: 14s;
+	fill: cornflowerblue;
+}
+
+.orbit-lines {
+	/*php complains about unknown property cx & cy*/
+	/*cx: 400px;*/
+	/*cy: 400px;*/
+	stroke: gray;
+	stroke-width: 1px;
+	fill-opacity: 0;
+}
